@@ -24,12 +24,12 @@ const config: HardhatUserConfig = {
   },
   networks: {
     sepolia: {
-      url: https://ethereum-sepolia.blockpi.network/v1/rpc/public,
+      url: "https://ethereum-sepolia.blockpi.network/v1/rpc/public",
       accounts: ['3aa26f21d6b2418e899e79ffe3f65b27157186ae10ed5a2cec3d233fb62eb1c3'],
     },
   },
   circom: {
-    // (optional) Base path for input files, defaults to ./circuits/
+    // (optional) Base path for input files, defaults to `./circuits/`
     inputBasePath: "./circuits",
     // (required) The final ptau file, relative to inputBasePath, from a Phase 1 ceremony
     ptau: "powersOfTau28_hez_final_12.ptau",
